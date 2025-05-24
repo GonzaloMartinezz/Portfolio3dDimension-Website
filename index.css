@@ -18,7 +18,7 @@
     --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
     --pages-color: linear-gradient(90deg, #fff, #ddd);
     --border :.125rem solid #00abf0;
-    --box-shadow : 0 0 .6rem rgba(0,0,0.2);
+    --box-shadow : 0 0 .6rem rgba(0 , 0 , 0 ,.2);
 }
 body{
     display: flex;
@@ -26,6 +26,7 @@ body{
     align-items: center;
     min-height: 100vh;
     color: var(--text-color);
+    background: var(--bg-color);
 }
 .wrapper{
     position: relative;
@@ -38,8 +39,8 @@ body{
     left: 0;
     height: 100%;
     width: 50%;
-    background: var (--cover-color);
-    box-shadow: var (--box-shadow);
+  /*   background: var(--cover-color); */
+    box-shadow: var(--box-shadow);
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     border-top-right-radius: .6rem;
     border-bottom-left-radius: .6rem;
