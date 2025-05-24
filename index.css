@@ -39,12 +39,15 @@ body{
     left: 0;
     height: 100%;
     width: 50%;
-  /*   background: var(--cover-color); */
-    box-shadow: var(--box-shadow);
+    background: var(--cover-color); 
+    box-shadow: var(--box-shadow);     
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     border-top-right-radius: .6rem;
     border-bottom-left-radius: .6rem;
     transform-origin: right;
+}
+.cover .cover-left{
+    z-index: -1;
 }
 .cover.cover-right.turn{
     transform: rotateY(180deg);
@@ -144,3 +147,50 @@ body{
     color: var(--white-color);
 }
 
+.book-page.page-right {
+    position : absolute;
+    right: 0;
+    transform-style: preserve-3d;
+}
+
+.bool-page .page-front,
+.bool-page .page-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pages-color);
+    padding: 1.5rem 2 rem;
+}
+
+.book-page .page-front{
+    transform: rotateY(0deg) translateZ(1px);
+}
+.book-page .page-back{
+    transform: rotateY(180deg) translate(1px);
+}
+
+.title{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.workeduc-box{
+    display: flex;
+    margin: .6rem 0;
+}
+.workeduc-box .workeduc-content{
+   position: relative;
+   background: seagreen;
+}
+.workeduc-content{
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: var(--border);
+}
+.workeduc-content .year{
+    color : var(--main-color);
+}
+.workeduc-content .year i{
+    margin-right: .4rem;
+}
