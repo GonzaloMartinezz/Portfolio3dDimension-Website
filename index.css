@@ -38,8 +38,8 @@ body{
     left: 0;
     height: 100%;
     width: 50%;
-    background: var(--cover-color);
-    box-shadow: var(--box-shadow);
+    background: var (--cover-color);
+    box-shadow: var (--box-shadow);
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     border-top-right-radius: .6rem;
     border-bottom-left-radius: .6rem;
@@ -89,10 +89,12 @@ body{
 
 .profile-page .social-media a {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 2.5rem;
     height: 2.5rem;
     background: transparent;
-    border:var (--main-color);
+    border: var(--main-color);
     border-radius: 50%;
     font-size: 1.3rem;
     color: var(--main-color);
@@ -108,8 +110,11 @@ body{
     text-align: justify;
 }
 
+.profile-page .btn-box{
+    margin-top: 1.2rem;
+}
 .btn{
-    display: inline-block;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 9.5rem;
@@ -117,8 +122,24 @@ body{
     background: var(--main-color);
     border: var(--border);
     border-radius: .3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--white-color);
     font-weight: 500;
     margin: 0 1rem;
+    transition: .5s;
 }
+
+.btn:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+}
+.btn-box .btn:nth-child(2):hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
