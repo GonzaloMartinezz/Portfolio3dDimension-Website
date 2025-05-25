@@ -26,26 +26,28 @@ body{
     align-items: center;
     min-height: 100vh;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--bg-color); 
 }
 .wrapper{
     position: relative;
     width: 66rem;
     height: 45rem;
-}
+    background: red;
+} 
 .cover{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+ /*    top: 0;
+    left: 0; */
     width: 50%;
+    height: 100%;
     background: var(--cover-color); 
     box-shadow: var(--box-shadow);     
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
     border-top-right-radius: .6rem;
     border-bottom-left-radius: .6rem;
-    transform-origin: right;
+    transform-origin: right; 
 }
+/*
 .cover .cover-left{
     z-index: -1;
 }
@@ -193,4 +195,4 @@ body{
 }
 .workeduc-content .year i{
     margin-right: .4rem;
-}
+} */
