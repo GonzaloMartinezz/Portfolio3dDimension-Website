@@ -151,8 +151,8 @@ body{
     transform-style: preserve-3d;
 }
 
-.bool-page .page-front,
-.bool-page .page-back{
+.book-page .page-front,
+.book-page .page-back{
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +160,7 @@ body{
     height: 100%;
     background: var(--pages-color);
     padding: 1.5rem 2 rem;
-}
+} 
 
 .book-page .page-front{
     transform: rotateY(0deg) translateZ(1px);
@@ -171,25 +171,36 @@ body{
 
 .title{
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-
 .workeduc-box{
  border-left: var(--border);
+ border-left: var(--border);
 }
+.workeduc-content .year {
+    color: var(--main-color);
+}
+.workeduc-content .year i{
+    margin-right: .4rem;
+}
+
 .workeduc-box .workeduc-content{
    position: relative;
     padding-left: 1.6rem;
     margin-bottom: 1.2rem;
+}
+.workeduc-box .workeduc-content ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--main-color);
+    border-radius: 50%;
 }
 .workeduc-content{
     margin-left: 1rem;
     padding-left: 1rem;
     border-left: var(--border);
 }
-.workeduc-content .year{
-    color : var(--main-color);
-}
-.workeduc-content .year i{
-    margin-right: .4rem;
-}
+
