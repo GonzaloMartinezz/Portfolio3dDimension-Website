@@ -183,7 +183,6 @@ body{
 }
 .workeduc-box .workeduc-content{
    position: relative;
-   background: seagreen;
 }
 .workeduc-content{
     margin-left: 1rem;
@@ -196,3 +195,4 @@ body{
 .workeduc-content .year i{
     margin-right: .4rem;
 }
+ 
