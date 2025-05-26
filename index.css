@@ -18,7 +18,7 @@
     --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
     --pages-color: linear-gradient(90deg, #fff, #ddd);
     --border :.125rem solid #00abf0;
-    --box-shadow : 0 0 .6rem rgba(0 , 0 , 0 ,.2);
+    --box-shadow : 0 0 .6rem rgba(0 , 0 , 0 , .2);
 }
 body{
     display: flex;
@@ -32,7 +32,6 @@ body{
     position: relative;
     width: 66rem;
     height: 45rem;
-    background: red;
 } 
 .cover{
     position: absolute;
@@ -40,18 +39,15 @@ body{
     height: 100%;
     background: var(--cover-color);
     box-shadow: var(--box-shadow);
-    border-top-left-radius: .6rem;
-    border-bottom-left-radius: .6rem;
-    transform-origin: left;
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
     transform-style: preserve-3d;
     transition: .5s ease;
 }
-.cover .cover-right.turn{
-    right: 0;
+.cover.cover-right.turn{
     transform: rotateY(180deg);
 }
 .cover.cover-left{
-    left: 0;
     z-index: -1;
 }
 .book{
@@ -81,7 +77,7 @@ body{
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
 } 
-.profile-page h1{
+/* .profile-page h1{
     font-size: 2.7rem;
     line-height : 1;
 }
@@ -178,11 +174,12 @@ body{
     margin-bottom: .5rem;
 }
 .workeduc-box{
-    display: flex;
-    margin: .6rem 0;
+ border-left: var(--border);
 }
 .workeduc-box .workeduc-content{
    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 1.2rem;
 }
 .workeduc-content{
     margin-left: 1rem;
@@ -195,4 +192,4 @@ body{
 .workeduc-content .year i{
     margin-right: .4rem;
 }
- 
+  */
