@@ -277,7 +277,7 @@ margin: .2rem 0 .8rem ;
     gap: 1.5rem;
 }
 .skills-box .skills-content{
-    flex: 1 1 10rem;
+    flex: 1 1 20rem;
 }
 .skills-content h3{
     font-size: 1.3rem;
@@ -288,16 +288,16 @@ margin: .2rem 0 .8rem ;
 .skills-content .content{
     display: flex;
    flex-wrap: wrap;
-   gap: 8rem;
+   gap: .8rem;
 }
 .skills-content .content span{
  display: inline-flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 9rem;
- height: 3rem;
+ width: 5.9rem;
+ height: 6.1rem;
  border: var(--border);
- border-radius: .9rem;
+ border-radius: .3rem;
 
 }
