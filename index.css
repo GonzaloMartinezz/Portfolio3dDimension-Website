@@ -274,6 +274,7 @@ margin: .2rem 0 .8rem ;
 .skills-box{
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 .skills-box .skills-content{
     flex: 1 1 10rem;
@@ -287,9 +288,16 @@ margin: .2rem 0 .8rem ;
 .skills-content .content{
     display: flex;
    flex-wrap: wrap;
+   gap: 8rem;
 }
 .skills-content .content span{
  display: inline-flex;
- width: 6rem;
- height: 5rem;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 9rem;
+ height: 3rem;
+ border: var(--border);
+ border-radius: .9rem;
+
 }
