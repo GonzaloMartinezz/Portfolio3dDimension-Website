@@ -8,7 +8,7 @@
     <title>3D Portfolio website</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -70,7 +70,7 @@
                         <span class="number-page">1</span>
 
                         <span class="nextprev-btn" data-page = "turn-1">
-                           <i class='bx  bx-chevron-right'></i> 
+                          <i class="fa-solid fa-chevron-right"></i>
                         </span>
                 </div>
 
@@ -106,7 +106,7 @@
                          <span class="number-page">2</span>
 
                         <span class="nextprev-btn back" data-page = "turn-1">
-                           <i class='bx  bx-chevron-left'></i> 
+                          <i class="fa-solid fa-chevron-left"></i>
                         </span>
                 </div>
             </div>
@@ -162,7 +162,7 @@
                       <span class="number-page">3</span>
 
                         <span class="nextprev-btn" data-page = "turn-2">
-                           <i class='bx  bx-chevron-right'></i> 
+                            <i class="fa-solid fa-chevron-right"></i>
                         </span>
                 </div>
 
@@ -202,7 +202,7 @@
                             </div>
                         </div>
 
-                          <div class="skills-content">
+                        <!--   <div class="skills-content">
                             <h3>Data Analytics</h3>
                             <div class="content">
                                 <span>EXCEL</span>
@@ -211,24 +211,24 @@
                                 <span><i class='bxl  bx-postgresql'></i>SQL</span>
                                 <span><i class='bxl  bx-python'></i>PYTHON</span> 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                      <span class="number-page">4</span>
 
                         <span class="nextprev-btn back" data-page = "turn-2">
-                           <i class='bx  bx-chevron-left'></i>
+                          <i class="fa-solid fa-chevron-left"></i>
                         </span>
                 </div>
              </div>
 
-                <div class="book-page page-right" id="turn-3">
+                <div class="book-page page-right turn" id="turn-3">
                     <div class="page-front">
                         <h1 class="title">Latest Projects</h1>
 
                         <div class="portfolio-box">
                             <div class="img-box">
-                                <img class="h-100" src="./img/permunstudio.PNG" alt="">
+                                <img src="./img/permunstudio.PNG" alt="">
                             </div>
                             
                              <div class="info-box">
@@ -239,19 +239,41 @@
                             <p>Technologies Used</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-
                             <div class="btn-box">
                             <a href="#" class="btn">Read More</a>
                              <a href="#" class="btn">More Projects</a>
                             </div>
                         </div>
+                            <span class="number-page">5</span>
+
+                        <span class="nextprev-btn" data-page = "turn-3">
+                              <i class="fa-solid fa-chevron-right"></i>
+                        </span>
 
                 </div>
-                  
-
-
                       <div class="page-back">
                         <h1 class="title">Contact Me</h1>
+
+                        <div class="contact-box">
+                            <form action="#">
+                                <input type="text" class="field" placeholder="Full Name" required>
+                                <input type="text" class="field" placeholder="Email Adress" required>
+                                <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required>
+                                </textarea>
+                                <input type="submit" class="btn" value="Send Message">
+                            </form>
+                        </div>
+
+                          <span class="number-page">6</span>
+
+                        <span class="nextprev-btn back" data-page = "turn-3">
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </span>
+
+                        <a href="#" class="back-profile">
+                            <p>Profile</p>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
                     </div>
 
                 </div>
