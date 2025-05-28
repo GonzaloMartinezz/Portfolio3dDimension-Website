@@ -295,7 +295,7 @@ margin: .2rem 0 .8rem ;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 5.9rem;
+ width: 5.8rem;
  height: 6.1rem;
  border: var(--border);
  border-radius: .3rem;
@@ -303,10 +303,51 @@ margin: .2rem 0 .8rem ;
  transition: .3s ease;
 }
 .skills-content .content span:hover{
-   box-shadow: var(--box-shadow)    ;
+   box-shadow: var(--box-shadow);
 }
 .skills-content .content span i{
     font-size: 3rem;
     color: var(--main-color);
 
+}
+.portfolio-box .img-box{
+display: flex;
+width: 100%;
+height: 15rem;
+border: var(--border);
+border-radius: .5rem;
+overflow: hidden;
+}
+.portfolio-box .img-box img{
+width: 100%;
+object-fit: cover;
+transition: .5s ease;
+}
+.portfolio-box .img-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-box .info-box{
+     margin: 1rem 0 1.5rem
+}
+
+.portfolio-box .info-box .info-title{
+  background: seagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio-box .info-box .info-title h3{
+font-size: 1.3rem;
+}
+
+.portfolio-box .info-box .info-title a {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+.portfolio-box .info-box p:nth-of-type(2){
+  font-size: .9rem;
+  margin-bottom: .8rem;
 }
